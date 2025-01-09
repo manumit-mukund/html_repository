@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>onmouseover event attribute</title>
+
+    <style>
+        body {
+
+            text-align: center;
+        }
+
+        h1 {
+
+            color: green;
+
+        }
+
+        h2 {
+
+            color: blue;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        h1: Hello World
+    </h1>
+
+    <h2>
+        h2: Hello World
+    </h2>
+
+    <span onmouseover="funcOver()">
+
+        Hello World: MouseOver
+
+    </span>
+
+    <br><br><br><br>
+
+    <span>
+
+        Hello World<br>
+        Hello World<br>
+        Hello World<br>
+        Hello World<br>
+
+    </span>
+
+    <br><br><br><br>
+
+    <span onmouseout="funcOut()">
+
+        Hello World: MouseOut
+
+    </span>
+
+
+    <script type="text/javascript">
+
+        function funcOver() {
+
+            alert("Mouse move over");
+
+        }
+
+        function funcOut() {
+
+            alert("Mouse move out");
+
+        }
+
+    </script>
+
+</body>
+
+</html>
