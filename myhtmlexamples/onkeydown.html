@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1 style="color:green">
+        h1: Hello World
+    </h1>
+
+    <p>
+        Press any key inside the input field
+    </p>
+
+    <input type="text" id="text1" style="background-color:yellow">
+
+    <script>
+
+        document.getElementById("text1").addEventListener("keydown", myFunc);
+
+        function myFunc() {
+
+            document.getElementById("text1").style.backgroundColor = "blue";
+        }
+
+    </script>
+
+</body>
+
+</html>
