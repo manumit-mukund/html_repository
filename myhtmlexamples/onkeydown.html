@@ -11,13 +11,20 @@
         Press any key inside the input field
     </p>
 
-    <input type="text" id="text1" style="background-color:yellow">
+    <input type="text" id="text1" style="background-color:red">
 
     <script>
 
-        document.getElementById("text1").addEventListener("keydown", myFunc);
+        document.getElementById("text1").addEventListener("keydown", myFuncDown);
 
-        function myFunc() {
+        document.getElementById("text1").addEventListener("keyup", myFuncUp);
+
+        function myFuncDown() {
+
+            document.getElementById("text1").style.backgroundColor = "green";
+        }
+
+        function myFuncUp() {
 
             document.getElementById("text1").style.backgroundColor = "blue";
         }
